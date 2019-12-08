@@ -9,11 +9,13 @@ class Point {
 
   //Getter method
   get x() {
+    //property
     return this._x; //Inside the class, we do have access to the private members in the class (while we don't have the access from the outside)
   }
 
   //Setter method: Can only change the value of x if the value is within a range
   set x(value) {
+    //property
     if (value < 0) throw new Error("Value can't be less than 0");
     this._x = value;
   }

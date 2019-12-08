@@ -1,3 +1,8 @@
+//Access Modifiers: Controll access for certain members of a class from the outside
+//**1. public (most common)**: Public is by default, so we usually don't specify it unless it's necessary.
+//**2. private (most common)**: Once it sets to 'private', we cannot change it after the object is initialised.
+//**3. protected**
+
 // Original
 
 class Point {

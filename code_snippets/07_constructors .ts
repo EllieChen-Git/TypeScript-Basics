@@ -2,8 +2,8 @@ class Point {
   x: number;
   y: number;
 
-  //'?'after variables makes it optional
-  //Once you make a variable optional, the variables on its right need to be optional as well
+  //'?'after parameters makes them optional
+  //Once you make a parameter optional, all the parameters on its right need to be optional as well (TypeScript)
   constructor(x?: number, y?: number) {
     this.x = x;
     this.y = y;

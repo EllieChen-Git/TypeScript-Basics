@@ -1,6 +1,13 @@
+//Optiona 1: In-line annotation
+//let drawPoint = (point: {x: number, y: number}) =>{
+//
+//}
+
+//Optiona 2: Interfaces (naming convention: PascalCase)
 interface Point {
-  x: number;
+  x: number; //two properties x & y
   y: number;
+  draw: () => void; //draw function here, doesn't take any parameter, return 'void'
 }
 
 //function

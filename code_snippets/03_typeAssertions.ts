@@ -1,5 +1,6 @@
-let message;
-message = "abc";
+let messageTwo; //data type: any
+messageTwo = "abc";
 
-let endWithC = (<string>message).endsWith("c"); //Method 1: more common
-let alternativeWay = (message as string).endsWith("c"); //Method 2
+//Type assertion as string
+let endWithC = (<string>messageTwo).endsWith("c"); //Method 1: more common
+let alternativeWay = (messageTwo as string).endsWith("c"); //Method 2
