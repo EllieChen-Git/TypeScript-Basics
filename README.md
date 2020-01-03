@@ -22,6 +22,8 @@ npm install -g typescript
 
 - TypeScript can run any regular JavaScript code.
 
+---
+
 ### Compilation
 
 - In order to read .ts files, we need to compile it to .js files
@@ -33,6 +35,8 @@ node {filename.js} //Then we can run the .js file with our node command
 
 tsc main.ts && node main.js //Shorthand: Compile .ts & run in Node.js
 ```
+
+---
 
 ### Variable Declaration
 
@@ -48,6 +52,8 @@ main.ts:6:26 - error TS2304: Cannot find name 'i'.
                            ~
 Found 1 error.
 ```
+
+---
 
 ### Data Types
 
@@ -82,6 +88,8 @@ enum Color {
 let backgroundColor = Color.Red;
 ```
 
+---
+
 ### Type Assertions
 
 ```typescript
@@ -91,6 +99,8 @@ message = "abc";
 let endWithC = (<string>message).endsWith("c"); //Method 1: more common
 let alternativeWay = (message as string).endsWith("c"); //Method 2
 ```
+
+---
 
 ### Interfaces
 
@@ -116,6 +126,8 @@ drawPoint({
 });
 ```
 
+---
+
 ### Classes
 
 - **Definition**: We use classes to group variables (properties) and functions (methods) that are highly related.
@@ -136,6 +148,8 @@ class Point {
   }
 }
 ```
+
+---
 
 ### Objects
 
@@ -167,6 +181,8 @@ point.y = 2;
 point.draw();
 ```
 
+---
+
 ### Constructors
 
 - How to use a constructor in TypeScript
@@ -193,6 +209,8 @@ let point = new Point(); //Now we can create a new object without parameters
 point.draw();
 ```
 
+---
+
 ### Access Modifiers
 
 - **Access modifiers**: to control the accessibility of certain members (fields & methods) of a class from outside.
@@ -208,6 +226,8 @@ class Point {
   private x: number;  //How to set a property to 'private'
   y: number;          // 'y' still remains 'public'
 ```
+
+---
 
 ### Access Modifiers in Constructor Parameters
 
@@ -254,6 +274,8 @@ point.draw();
 // TypeScript compiler will also initialise the fields with values of the arguments for us
 ```
 
+---
+
 ### Properties
 
 - **Use case of property**: If you have private fields, and you want to give a read-only access for the underlined field from the outside or you want to give users the access to set the value with some basic value validation
@@ -290,9 +312,11 @@ point.x = 10; //We can use properties as fields here (not as methods anymore).
 point.draw();
 ```
 
+---
+
 ### Modules
 
 - In TypeScript, each file (with either an export or import statement on the top) is a module.
 
 - Import: main.ts
-- Export: code_snippets\point.ts
+- Export: code_snippets\10_point.ts
