@@ -67,7 +67,7 @@ Found 1 error.
 let count: number; // Declare variable 'count' is a number
 
 count = 5;
-count = "aaa"; // VS code will show an error message if you define a non-number value
+count = 'aaa'; // VS code will show an error message if you define a non-number value
 ```
 
 - Common data types in TypeScript & enum
@@ -78,7 +78,7 @@ let b: boolean;
 let c: string;
 let d: any; // any data type
 let e: number[] = [1, 2, 3]; // array of numbers & [optionally] initialise the array as [1, 2, 3]
-let f: any[] = [1, true, "a", false]; // array of any data types & [optionally] initialise the array as [1, true, "a", false]
+let f: any[] = [1, true, 'a', false]; // array of any data types & [optionally] initialise the array as [1, true, "a", false]
 
 enum Color {
   Red = 0,
@@ -94,10 +94,10 @@ let backgroundColor = Color.Red;
 
 ```typescript
 let message;
-message = "abc";
+message = 'abc';
 
-let endWithC = (<string>message).endsWith("c"); //Method 1: more common
-let alternativeWay = (message as string).endsWith("c"); //Method 2
+let endWithC = (<string>message).endsWith('c'); //Method 1: more common
+let alternativeWay = (message as string).endsWith('c'); //Method 2
 ```
 
 ---
@@ -165,7 +165,7 @@ class Point {
   y: number;
 
   draw() {
-    console.log("X: " + this.x + ", Y: " + this.y); //We need to use 'this' here
+    console.log('X: ' + this.x + ', Y: ' + this.y); //We need to use 'this' here
     // console.log(`X: ${this.x}, Y: ${this.y}`); //string interpolation
   }
 
@@ -320,3 +320,7 @@ point.draw();
 
 - Import: main.ts
 - Export: code_snippets\10_point.ts
+
+### Stack Implementation (Push, Pop, Max)
+
+challenges\stack.ts
